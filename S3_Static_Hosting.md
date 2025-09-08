@@ -26,7 +26,7 @@ Amazon S3 static website hosting lets you host webpages (HTML, CSS, JavaScript, 
 
 • Click Create bucket, name it (preferably same as your domain, e.g., example.com), choose region.
 
-<h3>Enable Static Website Hosting</h3>
+<h3>2. Enable Static Website Hosting</h3>
 
 • In the bucket, go to Properties > Static website hosting > Edit.
 
