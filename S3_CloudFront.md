@@ -34,7 +34,8 @@ It caches your content at edge locations around the world to serve it to users w
 
 <h1>What Is an Edge Location?</h1>
 
-![image alt](https://github.com/nikiimisal/S3-CLI-IAm/blob/main/cloudfront_location_edge.png?raw=true)
+![image alt](https://github.com/nikiimisal/S3-CLI-IAm/blob/main/cloudfront_location_edge.png?raw=true)  ![image alt](https://github.com/nikiimisal/S3-CLI-IAm/blob/main/cloudfront.jpg?raw=true).
+
 
 • An Edge Location (also called a Point of Presence or PoP) is a geographically distributed caching data center that AWS CloudFront uses to serve content closer to users. These locations are not the same as AWS Regions or Availability Zones—they exist to reduce latency by placing static and dynamic content nearer to viewers
 
