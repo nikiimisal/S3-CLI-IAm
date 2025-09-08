@@ -122,7 +122,48 @@ Edge servers handle encryption and request termination, improving performance an
 
 
 
+<h1>How to use & Run & Speed Testing S3 vs CloudFront</h1>
 
+1. Objective
+You have a file hosted on an S3 bucket, and you want to compare its load speed when accessed directly via the S3 URL vs via a CloudFront distribution domain. The goal is to find out which is faster—S3 or CloudFront.
+
+2. Why CloudFront is Usually Faster
+
+• Edge caching: CloudFront uses globally distributed edge locations to cache content closer to users, reducing latency—especially for repeated requests. CloudFront fetches the object from the S3 origin only once   and serves it from the nearest edge location for subsequent requests.
+
+
+• Real-world test results:
+
+• In a benchmark of 50 iterations:
+
+-- S3 median: ~246 ms
+-- CloudFront median: ~30 ms
+-- CloudFront clearly outperformed S3. 
+
+• In tests from various locations (Seoul, Tokyo, California, Frankfurt), CloudFront delivered speeds like 96–107 MB/s in just 0.2 s, compared to much slower rates (3–94 MB/s and 0.3–8 s) when accessing S3 directly. 
+
+
+3. How to Setup and Test (Short Step-by-Step):
+
+• Set up your S3 bucket and upload your file, e.g., image.jpg.
+
+• Create a CloudFront distribution, choosing your S3 bucket as the origin.
+
+• After CloudFront is deployed, you get a domain like:
+                   
+      https://<cloudfront-id>.cloudfront.net/img-bucketi-name.file/image.jpg
+
+• Compare load times, especially median values. CloudFront should usually be much faster.
+
+4. Replace direct S3 URLs
+
+       (e.g., https://my-bucket.s3.region.amazonaws.com/image.jpg)
+    with CloudFront URLs
+
+       (e.g., https://d111111abcdef8.cloudfront.net/image.jpg)
+   in your app or website code.<br>
+
+   and run this link in browser
 
 
 
