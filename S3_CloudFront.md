@@ -29,7 +29,7 @@ It caches your content at edge locations around the world to serve it to users w
 
 • Geo-aware routing: Route users to the nearest region or even set up multi-origin failover (e.g., via Lambda@Edge).
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.*
 
 
 <h2>How to Set It Up</h2>
@@ -42,7 +42,15 @@ It caches your content at edge locations around the world to serve it to users w
 
  • Keep the bucket private and set up an OAI to grant CloudFront exclusive access.
 
+ <h3>2. Create a CloudFront Distribution</h3>
 
+ • Set the origin domain to your S3 website endpoint (for static hosting) or the REST API endpoint if you want HTTPS to origin.
+
+ • Configure Viewer Protocol Policy to redirect HTTP to HTTPS for secure delivery.
+
+ • Define cache behaviors (default TTLs, compression, allowed methods such as GET/HEAD).
+
+ • Add alternate domain names (CNAMEs) and attach an SSL certificate via ACM.
 
 
 
