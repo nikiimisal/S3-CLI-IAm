@@ -1,3 +1,6 @@
+
+![image alt](https://github.com/nikiimisal/S3-CLI-IAm/blob/main/thumbnail.png?raw=true)
+
 <h1>AWS S3 CloudFront</h1>
 
 <h2>What Is Amazon CloudFront (with S3)?</h2>
