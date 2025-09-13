@@ -66,7 +66,7 @@ Edge servers handle encryption and request termination, improving performance an
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.*
 
 
-<h2>How to Set It Up CloudFront</h2>
+<h1>How to Set It Up CloudFront</h1>
 
 <h3>Step‑by‑Step Overview:</h3>
 
