@@ -9,7 +9,7 @@ An IAM (Identity and Access Management) user is a digital identity you create wi
 
 Unlike the AWS root user, which has full account access, IAM users start with no permissions and must be granted explicit access.
 
-![image alt]([https://github.com/nikiimisal/S3-CLI-IAm/blob/main/iam.jpg?raw=true](https://github.com/nikiimisal/S3-CLI-IAm/blob/main/img/iam.jpg?raw=true))
+![image alt](https://github.com/nikiimisal/S3-CLI-IAm/blob/main/img/iam.jpg?raw=true)
 
 <h1>Uses & Benefits of IAM Users</h1>
 
